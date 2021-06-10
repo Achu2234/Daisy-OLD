@@ -63,9 +63,11 @@ from DaisyX.modules.helper_funcs.misc import paginate_modules
 from DaisyX.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Hello there, I'm [𝓓𝓪𝓲𝓼𝔂 𝓧](https://telegra.ph/file/473cc17913393959e0667.jpg)
+Hello there, I'm [𝑹𝒆𝒏𝒈𝒐𝒌𝒖 𝑺𝒂𝒏](https://telegra.ph/file/3461dfc2a85108209addb.mp4)
 
-I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot and I will help in managing your group
+𝕬 𝖕𝖔𝖜𝖊𝖗𝖋𝖚𝖑𝖑 𝕳𝖆𝖘𝖍𝖎𝖗𝖆 𝕸𝖆𝖓𝖆𝖌𝖊𝖒𝖊𝖓𝖙 𝕭𝖔𝖙 𝖜𝖍𝖎𝖈𝖍 𝖍𝖊𝖑𝖕𝖘 𝖞𝖔𝖚 𝖒𝖆𝖎𝖓𝖙𝖆𝖎𝖓 𝖞𝖔𝖚𝖗 𝕲𝖗𝖔𝖚𝖕. 𝕴'𝖒 𝖍𝖊𝖗𝖊 𝖙𝖔 𝖘𝖊𝖗𝖛𝖊 @𝖆𝖓𝖎𝖒𝖊_𝖗𝖊𝖆𝖑𝖒𝖘_𝖈𝖍𝖆𝖙𝖘 𝖇𝖚𝖙 𝖈𝖔𝖚𝖑𝖉 𝖍𝖊𝖑𝖕 𝖞𝖔𝖚 𝖆𝖑𝖘𝖔. 
+
+𝕻𝖔𝖜𝖊𝖗𝖊𝖉 𝖇𝖞 @𝖆𝖓𝖎𝖒𝖊_𝖗𝖊𝖆𝖑𝖒𝖘
 
 ✪ Make sure you read *INFO* Section Below ✪ 
 """
@@ -79,14 +81,14 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="💫 Add Daisy to your group 💫", url="t.me/daisyXBot?startgroup=true"
+            text="💫 Add Daisy to your group 💫", url="t.me/RengokuKyujoro_Robot?startgroup=true"
         ),
     ],
 ]
 
 
 HELP_STRINGS = f"""
-*Main Commands :* [🤖](https://telegra.ph/file/473cc17913393959e0667.jpg)
+*Main Commands :* [🤖](https://giphy.com/gifs/funimation-tEcIyVc6ukQV2eb86t)
 ✪ /start: Starts me! You've probably already used this.
 ✪ /help: Click this, I'll let you know about myself!
 ✪ /donate: You can support my creater using this command.
@@ -101,7 +103,7 @@ HELP_STRINGS = f"""
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 You can donate to the original writer's of the Base code,
-Support them  [Inuka](t.me/InukaASiTH),[Jason](t.me/imjanindu),"""
+Support them  [Achu biju](https://t.me/Yeageristbotsdev),[Jason](t.me/imjanindu),"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -360,10 +362,10 @@ def DaisyX_about_callback(update, context):
     query = update.callback_query
     if query.data == "aboutmanu_":
         query.message.edit_text(
-            text=f"*😍 Hi again!  The name's {dispatcher.bot.first_name} 😍 \n\nAs  You I'm a next generational group management bot developed by Infinity_Bots.* "
-            f"\n\n 🔥 Join [Infinity_Bots](https://t.me/Infinity_Bots) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
+            text=f"*😍 Hi again!  The name's {dispatcher.bot.first_name} 😍 \n\nAs  You I'm a next generational group management bot developed by @anime_realms.* "
+            f"\n\n 🔥 Join [Anime Realms](https://t.me/anime_realms) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
             f"\n\n I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
-            f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/473cc17913393959e0667.jpg)"
+            f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/3764ef235105fc1421871.mp4)"
             f"\n\n👇 You Can Know More About Me By Clicking The Below Buttons 👇",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -398,7 +400,7 @@ def DaisyX_about_callback(update, context):
         query.message.edit_text(
             text=f"* ｢ BASIC HELP 」*"
             f"\nIf You Can Also Add {dispatcher.bot.first_name} To Your Chats By Clicking [Here](http://t.me/{dispatcher.bot.username}?startgroup=true) And Selecting Chat. \n"
-            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [InfinityJE](https://t.me/infinityje).\n"
+            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [Anime Realms Chats](https://t.me/anime_realms_chats).\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -418,9 +420,8 @@ def DaisyX_about_callback(update, context):
         )
     elif query.data == "aboutmanu_credit":
         query.message.edit_text(
-            text=f"*{dispatcher.bot.first_name} Is the redisigned version of Daisy and Naruto for the best performance.*"
-            f"\n\nBased on [Daisy](https://github.com/inukaasith/daisy) + [Naruto](https://github.com/imjanindu/narutorobot)."
-            f"\n\n{dispatcher.bot.first_name}'s source code was written by InukaASiTH and Imjanindu"
+            text=f"*{dispatcher.bot.first_name} Is the redisigned version of Rengoku Kyujoro and Naruto for the best performance.*"
+            f"\n\n{dispatcher.bot.first_name}'s source code was written by InukaASiTH and Achu biju"
             f"\n\nIf Any Question About {dispatcher.bot.first_name}, \nLet Us Know At @{SUPPORT_CHAT}.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
